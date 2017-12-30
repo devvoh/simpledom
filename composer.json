@@ -1,0 +1,26 @@
+{
+  "name": "devvoh/simpledom",
+  "type": "library",
+  "description": "SimpleDom just makes it a little easier to work with the DOM in PHP",
+  "keywords": ["library", "dom", "html"],
+  "homepage": "https://github.com/devvoh/simpledom",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Robin de Graaf",
+      "email": "hello@devvoh.com",
+      "homepage": "https://devvoh.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "SimpleDom\\": "src/"
+    }
+  }
+}
