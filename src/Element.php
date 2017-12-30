@@ -14,7 +14,7 @@ class Element
     public static function fromDOMElement(\DOMElement $domElement)
     {
         $element = new static();
-        $element->setDOMElement(clone $domElement);
+        $element->setDOMElement($domElement);
         return $element;
     }
 

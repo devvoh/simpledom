@@ -16,16 +16,27 @@ class Document
     public static function fromDOMDocument(\DOMDocument $domDocument)
     {
         $document = new static();
-        $document->setDOMDocument(clone $domDocument);
+        $document->setDOMDocument($domDocument);
         return $document;
     }
 
     /**
      * @param \DOMDocument $domDocument
+     *
+     * @return Document
      */
     public function setDOMDocument(\DOMDocument $domDocument)
     {
         $this->domDocument = $domDocument;
+        return $this;
+    }
+
+    /**
+     * @return \DOMDocument
+     */
+    public function getDOMDocument()
+    {
+        return $this->domDocument;
     }
 
     /**

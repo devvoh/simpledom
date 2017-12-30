@@ -49,6 +49,13 @@ $elements = $document->getElementsByClassNames(["header", "sub"]);
 
 Which will only return items that have both the "header" and "sub" class. The order of which is not important.
 
+To get the DOMDocument back so you can save the HTML, simply do this:
+
+```php
+$domDocument = $document->getDOMDocument();
+echo $domDocument->saveHTML();
+```
+
 SimpleDom `Element` instances have some added features as well.
 
 ```php
