@@ -57,7 +57,7 @@ class DocumentTest extends \PHPUnit\Framework\TestCase
 
     public function testGetByClassNamesReturnsOnlyThoseWithAll()
     {
-        $elements = $this->simpleDomDocument->getElementsByClassNames(["ahoy", "class"]);
+        $elements = $this->simpleDomDocument->getElementsByClassNames(["ahoy", ""]);
         $this->assertCount(1, $elements);
         $this->assertTrue($elements[0]->hasClasses(["class", "ahoy"]));
     }

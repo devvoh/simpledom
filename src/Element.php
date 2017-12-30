@@ -9,7 +9,7 @@ class Element
     /**
      * @param \DOMElement $domElement
      *
-     * @return \DOMElement|\SimpleDom\Element
+     * @return \DOMElement|Element
      */
     public static function fromDOMElement(\DOMElement $domElement)
     {
@@ -46,7 +46,7 @@ class Element
     /**
      * @param string[] $classes
      *
-     * @return \SimpleDom\Element
+     * @return Element
      */
     public function setClasses(array $classes)
     {
@@ -85,7 +85,7 @@ class Element
     /**
      * @param string $class
      *
-     * @return \SimpleDom\Element
+     * @return Element
      */
     public function addClass($class)
     {
@@ -98,7 +98,7 @@ class Element
     /**
      * @param string[] $classes
      *
-     * @return \SimpleDom\Element
+     * @return Element
      */
     public function addClasses(array $classes)
     {
@@ -111,7 +111,7 @@ class Element
     /**
      * @param string $class
      *
-     * @return \SimpleDom\Element
+     * @return Element
      */
     public function removeClass($class)
     {
@@ -128,7 +128,7 @@ class Element
     /**
      * @param string[] $classes
      *
-     * @return \SimpleDom\Element
+     * @return Element
      */
     public function removeClasses(array $classes)
     {
@@ -141,7 +141,7 @@ class Element
     /**
      * @param string $class
      *
-     * @return \SimpleDom\Element
+     * @return Element
      */
     public function toggleClass($class)
     {
@@ -156,7 +156,7 @@ class Element
     /**
      * @param string[] $classes
      *
-     * @return \SimpleDom\Element
+     * @return Element
      */
     public function toggleClasses(array $classes)
     {
@@ -167,7 +167,7 @@ class Element
     }
 
     /**
-     * @return \SimpleDom\Element
+     * @return Element
      */
     public function clearClasses()
     {

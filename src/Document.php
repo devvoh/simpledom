@@ -31,7 +31,7 @@ class Document
     /**
      * @param string $name
      *
-     * @return NodeList
+     * @return \DOMElement[]|Element[]
      */
     public function getElementsByTagName($name)
     {
@@ -42,7 +42,7 @@ class Document
     /**
      * @param string $name
      *
-     * @return NodeList
+     * @return \DOMElement[]|Element[]
      */
     public function getElementsByClassName($name)
     {
@@ -52,7 +52,7 @@ class Document
     /**
      * @param string[] $names
      *
-     * @return NodeList
+     * @return \DOMElement[]|Element[]
      */
     public function getElementsByClassNames(array $names)
     {
@@ -93,17 +93,15 @@ class Document
     /**
      * @param \DOMElement[]|\DOMNodeList $elements
      *
-     * @return NodeList
+     * @return \DOMElement[]|Element[]
      */
     private function convertElementsToSimpleDomElements($elements)
     {
-        $nodeList = new NodeList();
-
+        $customElements = [];
         foreach ($elements as $element) {
-            $nodeList->addElement(Element::fromDOMElement($element));
+            $customElements[] = Element::fromDOMElement($element);
         }
-
-        return $nodeList;
+        return $customElements;
     }
 
     /**

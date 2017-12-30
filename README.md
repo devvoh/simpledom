@@ -33,7 +33,7 @@ $elements = $document->getElementsByClassName("header");
 
 And you'll get an array of `\SimpleDom\Element` items. SimpleDom also overwrites the following `DOMDocument` methods: `getElementsByTagName()`, `getElementById()` and `createElement()`.
 
-Normally the `getElement` methods would return a `DOMNodeList` but SimpleDom returns `\SimpleDom\NodeList` instead. This extends the `DOMNodeList` so shouldn't pose a problem in existing implementations.
+Normally the `getElement` methods would return a `DOMNodeList` but SimpleDom returns an array of elements instead.
 
 It's also possible to get elements which have multiple classes.
 
