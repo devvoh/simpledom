@@ -1,4 +1,10 @@
 # SimpleDom
+
+[![Build Status](https://travis-ci.org/devvoh/simpledom.svg?branch=master)](https://travis-ci.org/devvoh/simpledom)
+[![Latest Stable Version](https://poser.pugx.org/devvoh/simpledom/v/stable)](https://packagist.org/packages/devvoh/simpledom)
+[![Latest Unstable Version](https://poser.pugx.org/devvoh/simpledom/v/unstable)](https://packagist.org/packages/devvoh/simpledom)
+[![License](https://poser.pugx.org/devvoh/simpledom/license)](https://packagist.org/packages/devvoh/simpledom)
+
 SimpleDom adds simple class manipulation to DOMDocuments and DOMElements.
 
 ## Requirements
