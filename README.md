@@ -20,7 +20,7 @@ SimpleDom can be installed by using [Composer](http://getcomposer.org/). Simply 
 
 ## Usage
 
-SimpleDom can be considered an facade adapter for the built-in `DOMDocument` and `DOMElement` classes. As such, you can use them anywhere you currently use those.
+SimpleDom can be considered a facade adapter for the built-in `DOMDocument` and `DOMElement` classes. As such, you can use them anywhere you currently use those.
 
 Creating a new instance is done with an extra step, however:
 
